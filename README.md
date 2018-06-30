@@ -2,6 +2,8 @@
 
 # GÖRÜNTÜ İŞLEME FİNAL SINAVI İÇİN GELİŞTİRİLEN UYGULAMAS
 
+*Design Pattern Baya Çirkin duruyor biliyorum :sweat: Sonra düzeltilecektir...:blush:*
+
 1. TEMEL İŞLEMLER
 Uygulamamın ilk kısmında temel işlemler yapılmıştır. Ekran görüntüsü aşağıdaki gibidir.
 Bu kısımda yapılan işlemler ise;
