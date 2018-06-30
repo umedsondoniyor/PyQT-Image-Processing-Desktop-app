@@ -1,0 +1,1705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>965</width>
+    <height>493</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Umedzhon Izbasarov</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>955</width>
+     <height>465</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>955</width>
+     <height>465</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>791</width>
+     <height>471</height>
+    </size>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 170, 127);</string>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::South</enum>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Triangular</enum>
+   </property>
+   <property name="currentIndex">
+    <number>7</number>
+   </property>
+   <widget class="QWidget" name="tab_1">
+    <attribute name="title">
+     <string> Basic Operation </string>
+    </attribute>
+    <attribute name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Temel Islemler Bulunur ( gray image, binary, resize, pikselleri gosterme, rotate)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </attribute>
+    <widget class="QGraphicsView" name="uploadGV">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>256</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="backgroundBrush">
+      <brush brushstyle="NoBrush">
+       <color alpha="255">
+        <red>60</red>
+        <green>150</green>
+        <blue>60</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="operationGV">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>30</y>
+       <width>256</width>
+       <height>192</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="upload_btn">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>240</y>
+       <width>85</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Upload</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="h_cevir_btn">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>370</y>
+       <width>85</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ters Cevir</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="v_cevir_btn">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>370</y>
+       <width>85</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Aynalama</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="binary_btn">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>340</y>
+       <width>85</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ikili</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="grayScale_btn">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>340</y>
+       <width>85</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>gri</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="getEdge_btn">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>370</y>
+       <width>85</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>kenar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="resize_btn">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>290</y>
+       <width>85</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Resize</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="basic_tab_durum_lbl_2">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>30</y>
+       <width>161</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string>   Goruntuyu Dondurme</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="show_px_value_btn">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>360</y>
+       <width>121</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Pikselleri Goster</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>280</y>
+       <width>41</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Height</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>320</y>
+       <width>41</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Width</string>
+     </property>
+    </widget>
+    <widget class="QDial" name="dial">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>50</y>
+       <width>91</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="acceptDrops">
+      <bool>false</bool>
+     </property>
+     <property name="maximum">
+      <number>360</number>
+     </property>
+     <property name="invertedAppearance">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>280</y>
+       <width>41</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>X pix</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>320</y>
+       <width>41</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Y pix</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>141</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Yuklenen Goruntu</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>10</y>
+       <width>141</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Sonuc Goruntu</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horSlider">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>200</y>
+       <width>161</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="basic_tab_durum_lbl_3">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>170</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string>  Bulaniklik Verme</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="negatif_btn">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>340</y>
+       <width>85</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>negatif</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="H_X_txt">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>270</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="W_Y_txt">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>310</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="pixel_color_txt">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>360</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="upload_H_txt">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>240</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="upload_w_txt">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>240</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="after_W_txt">
+     <property name="geometry">
+      <rect>
+       <x>690</x>
+       <y>230</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="after_H_txt">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>230</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>250</y>
+       <width>16</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>H</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>250</y>
+       <width>16</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>W</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>240</y>
+       <width>16</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>W</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>240</y>
+       <width>16</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>H</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>240</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Sonuc boyut :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="slider_value_lbl">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>220</y>
+       <width>16</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="dial_value_lbl">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>90</y>
+       <width>31</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string> Filtering </string>
+    </attribute>
+    <attribute name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Canny, Sobel, Prewit ile filtrelemeler.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </attribute>
+    <widget class="QPushButton" name="upload_btn_filterTab">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>240</y>
+       <width>85</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Upload</string>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="uploadGV_filterTab">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>30</y>
+       <width>256</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="operationsGV_filterTab">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>30</y>
+       <width>256</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="canny_btn_filter">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>300</y>
+       <width>85</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Canny</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="sobel_btn_filter">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>300</y>
+       <width>85</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Sobel</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="prewitt_btn_filter">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>300</y>
+       <width>85</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Prewitt</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="filter_tab_durum_lbl">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>110</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>  Islem Durumu</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string> Labelling</string>
+    </attribute>
+    <attribute name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;a) bu sekil karedir veya degildir! Tespiti&lt;/p&gt;&lt;p&gt;b) kare mi dikdortgen mi kod ile fonksiyon yazma&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </attribute>
+    <widget class="QGraphicsView" name="uploadGV_labelling">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>256</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="upload_btn_labelling">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>230</y>
+       <width>85</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Upload</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_labelling">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>90</y>
+       <width>91</width>
+       <height>27</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="operationGV_labelling">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>20</y>
+       <width>256</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="labelling_btn">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>270</y>
+       <width>85</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Labelling</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="kontrol_btn">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>240</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Kontrol</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rbt_dikdort">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>300</y>
+       <width>102</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Dikdortgen</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rbt_kare">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>330</y>
+       <width>102</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Kare</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="kontrol_lbl">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>380</y>
+       <width>181</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Kontrol Sonuc :</string>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="operationGV_labelling_match">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>220</y>
+       <width>256</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_5">
+    <attribute name="title">
+     <string>Histogram</string>
+    </attribute>
+    <attribute name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Histogram esitleme ve orijinal goruntu uzerinde benzerliklerini karsilastir.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </attribute>
+    <widget class="QPushButton" name="histogram_treshold_btn">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>30</y>
+       <width>85</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Threshold</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="upload_btn_histogram">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>220</y>
+       <width>85</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Upload</string>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="uploadGV_histogram">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>256</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="operationGV_histogram">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>10</y>
+       <width>256</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="compare_btn_histogram">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>150</y>
+       <width>85</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Compare</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>190</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Measurements:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="sonuc_lbl">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>230</y>
+       <width>471</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> : )</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>Blury Image Comparison</string>
+    </attribute>
+    <attribute name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;%10 ile %60 kadar sirasiyla olusturulan gorultulu resimleri ile orijinal resimleri karsilastirarak benzerliklerini SSIM, MSE ve PSNR ile bulmak&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </attribute>
+    <widget class="QLabel" name="sonuc_lbl_blurify">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>230</y>
+       <width>471</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string> : )</string>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="uploadGV_bluarify">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>10</y>
+       <width>256</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>190</y>
+       <width>101</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Measurements:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="upload_btn_blurify">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>220</y>
+       <width>85</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Upload</string>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="operationGV_bluarify">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>10</y>
+       <width>256</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+    </widget>
+    <widget class="QSlider" name="BlurySlider">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>50</y>
+       <width>160</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>20</y>
+       <width>41</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Blurify</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_slider_blur">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>70</y>
+       <width>16</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_6">
+    <attribute name="title">
+     <string>Logical Operation</string>
+    </attribute>
+    <attribute name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;and, or ... gibi mantiksal islemler&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </attribute>
+    <widget class="QGraphicsView" name="operationGV_logical">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>230</y>
+       <width>256</width>
+       <height>192</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="uploadGV_logical">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>30</y>
+       <width>256</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="backgroundBrush">
+      <brush brushstyle="NoBrush">
+       <color alpha="255">
+        <red>60</red>
+        <green>150</green>
+        <blue>60</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="upload_btn_logical">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>250</y>
+       <width>85</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Upload</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="CB_logical">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>30</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>AND</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>NOT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>XOR</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>OR</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QGraphicsView" name="uploadGV_logical_2">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>30</y>
+       <width>256</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="backgroundBrush">
+      <brush brushstyle="NoBrush">
+       <color alpha="255">
+        <red>60</red>
+        <green>150</green>
+        <blue>60</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="upload_btn_logical_2">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>240</y>
+       <width>85</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Upload</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="operate_btn_logical">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>190</y>
+       <width>85</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Operate</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_7">
+    <attribute name="title">
+     <string>Erosion-Dilation</string>
+    </attribute>
+    <attribute name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;zaten yaziyor orda armut!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </attribute>
+    <widget class="QPushButton" name="upload_btn_ErDil">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>310</y>
+       <width>85</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Upload</string>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="uploadGV_ErDil">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>256</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="backgroundBrush">
+      <brush brushstyle="NoBrush">
+       <color alpha="255">
+        <red>60</red>
+        <green>150</green>
+        <blue>60</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="operationGV_ErDil">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>90</y>
+       <width>256</width>
+       <height>192</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="backgroundBrush">
+      <brush brushstyle="NoBrush">
+       <color alpha="255">
+        <red>60</red>
+        <green>150</green>
+        <blue>60</blue>
+       </color>
+      </brush>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="erode_btn_ErDil">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>120</y>
+       <width>85</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Erode</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="dilation_btn_ErDil">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>200</y>
+       <width>85</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Dilation</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_8">
+    <attribute name="title">
+     <string>Template Matching</string>
+    </attribute>
+    <attribute name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;goruntude aranan goruntuyu bulacagiz!&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </attribute>
+    <widget class="QGraphicsView" name="TM_upload_GV">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>211</width>
+       <height>181</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="TM_upload_btn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Upload</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="TM_goruntuler_CB">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>220</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="TM_arananSekil_GV">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>300</y>
+       <width>111</width>
+       <height>91</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="TM_tempMatch_btn">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>300</y>
+       <width>81</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Template
+Matching</string>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="TM_1_2_GV">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>40</y>
+       <width>111</width>
+       <height>91</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="TM_1_1_GV">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>40</y>
+       <width>111</width>
+       <height>91</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="TM_1_3_GV">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>40</y>
+       <width>111</width>
+       <height>91</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="TM_4_1_GV">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>40</y>
+       <width>111</width>
+       <height>91</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="TM_4_3_GV">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>40</y>
+       <width>111</width>
+       <height>91</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="TM_4_2_GV">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>40</y>
+       <width>111</width>
+       <height>91</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="TM_2_1_GV">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>170</y>
+       <width>111</width>
+       <height>91</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="TM_2_3_GV">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>170</y>
+       <width>111</width>
+       <height>91</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="TM_2_2_GV">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>170</y>
+       <width>111</width>
+       <height>91</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="TM_5_1_GV">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>170</y>
+       <width>111</width>
+       <height>91</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="TM_5_3_GV">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>170</y>
+       <width>111</width>
+       <height>91</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="TM_5_2_GV">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>170</y>
+       <width>111</width>
+       <height>91</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="TM_6_1_GV">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>300</y>
+       <width>111</width>
+       <height>91</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="TM_6_3_GV">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>300</y>
+       <width>111</width>
+       <height>91</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="TM_6_2_GV">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>300</y>
+       <width>111</width>
+       <height>91</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="TM_3_1_GV">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>300</y>
+       <width>111</width>
+       <height>91</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="TM_3_3_GV">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>300</y>
+       <width>111</width>
+       <height>91</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="TM_3_2_GV">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>300</y>
+       <width>111</width>
+       <height>91</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>200</y>
+       <width>71</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Goruntuler</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>280</y>
+       <width>91</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Aranan Sekil</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>20</y>
+       <width>81</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TM CCOEFF</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_20">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>150</y>
+       <width>81</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TM SQDIFF</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="TM_bnzr3_lbl">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>280</y>
+       <width>191</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>BENZERLIK</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_22">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>280</y>
+       <width>131</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TM SQDIFF NORMED</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_23">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>20</y>
+       <width>131</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TM CCOEFF NORMED</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="TM_bnzr4_lbl">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>20</y>
+       <width>191</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>BENZERLIK</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_25">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>150</y>
+       <width>131</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TM CCORR NORMED</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="TM_bnzr5_lbl">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>150</y>
+       <width>191</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>BENZERLIK</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_27">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>280</y>
+       <width>81</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TM CCORR</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="TM_bnzr2_lbl">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>150</y>
+       <width>191</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>BENZERLIK</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="TM_bnzr1_lbl">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>20</y>
+       <width>191</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>BENZERLIK</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="TM_bnzr6_lbl">
+     <property name="geometry">
+      <rect>
+       <x>750</x>
+       <y>280</y>
+       <width>191</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>BENZERLIK</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_9">
+    <attribute name="title">
+     <string>Face detection</string>
+    </attribute>
+    <attribute name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;face detection ile sinif ogrencilerinin tespiti yapacagiz.&lt;/p&gt;&lt;p&gt;a) DB olan veriler ile karsilastirma&lt;/p&gt;&lt;p&gt;b) gun-gun ogrencilerin sistemde devamlilik verilerini islemek&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </attribute>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
